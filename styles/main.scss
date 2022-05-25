@@ -1,0 +1,437 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.intro {
+  width: 100%;
+  background: url(../img/buket_main.png) center / cover no-repeat;
+  min-height: 1275px;
+}
+
+.intro__title {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 200px;
+  line-height: 242px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.intro-wrapper {
+  width: 100%;
+  background: url(../img/flower.png) top 40% left 35% no-repeat,
+    url(../img/buket.png) center / cover no-repeat,
+    url(../img/blue_ellipse.png) top 120% left -50% / 70% no-repeat,
+    url(../img/rev_ellipse_purple.png) top 40% left 100% no-repeat,
+    url(../img/lover.png) top 20% left 40% no-repeat;
+  min-height: 1000px;
+}
+
+/*.........................................HEADER...............................................................*/
+
+.header-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+li,
+li > a {
+  list-style-type: none;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-left: 20px;
+}
+
+.navbar__li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header__contacts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contacts__number {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #43ffd2;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.intro-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content__text {
+  margin-top: 50%;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.content__button {
+  width: 220px;
+  height: 50px;
+  background: #43ffd2;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button__link {
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+/*..............................................CATALOG.........................................................*/
+
+.catalog {
+  background: #040a0a;
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
+.catalog-wrapper {
+  background: url(../img/blue_ellipse.png) top 20% left 110% / 70% no-repeat,
+    url(../img/purple_ellipse.png) top 100% left -20% / 50% no-repeat,
+    url(../img/tcvety.png) top 60% left -10% no-repeat,
+    url(../img/dopolnitel.png) top 100% left 100% no-repeat,
+    url(../img/bukety.png) top 25% left 105% no-repeat;
+}
+
+.catalog__title {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 121px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.content-up {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.card-made {
+  width: 445px;
+  height: 280px;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 30px 30px 30px 50px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+
+.view__catalog {
+  align-self: flex-end;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #d978ac;
+  margin-top: 25px;
+}
+
+.content-description > p {
+  max-width: 540px;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.content-description {
+  padding-left: 50px;
+}
+
+.card__title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 44px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #43ffd2;
+  margin-bottom: 10px;
+}
+
+.card__list > li {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  list-style-type: circle;
+}
+
+.content-down {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-flowers {
+  width: 540px;
+  height: 280px;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px 30px 50px;
+  margin-top: -10%;
+}
+
+.card-more {
+  width: 540px;
+  height: 265px;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px 30px 50px;
+  margin-left: 30px;
+}
+
+/*............................................POPULAR..............................................................*/
+
+.popular {
+  background: #040a0a;
+}
+
+.popular-wrapper {
+  background: url(../img/popular.png) top 10% left 100% / 65% no-repeat,
+    url(../img/howMake.png) top 100% left 23% no-repeat,
+    url(../img/popular_ellipse_purple.png) top 30% left 50% / 100% no-repeat,
+    url(../img/popular_ellipse_blue.png) top -60% left -20% / 50% no-repeat;
+  padding-bottom: 150px;
+}
+
+.popular-wrapper-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  align-self: center;
+}
+
+.popular-wrapper-wrap > p {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 85px;
+}
+
+.popular-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.popular__sale {
+  display: inline;
+}
+
+.popular_card__title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.popular-price {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.card__price {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.card__sale {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  text-decoration-line: line-through;
+  text-transform: uppercase;
+  color: #939393;
+  margin-left: 10px;
+}
+
+.card__button {
+  width: 220px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid #ffffff;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.popular__link {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #d978ac;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+/*.................................................ORDER..........................................................*/
+
+.order {
+  background: #040a0a;
+}
+
+.order-wrapper {
+  padding-bottom: 150px;
+  padding-top: 100px;
+  background: url(../img/order.png) top 150% left 0% no-repeat,
+    url(../img/order_text.png) top 5% left 15% no-repeat,
+    url(../img/lover_flower.png) top 90% left 90% no-repeat;
+}
+
+.order-content {
+  padding-left: 35%;
+}
+
+.order-steps {
+  display: flex;
+}
+
+.order__tire {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.step-card {
+  margin-bottom: 30px;
+}
+
+.step__title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 44px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d978ac;
+}
+
+.step__text {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.steps-right {
+  margin-left: 120px;
+}
