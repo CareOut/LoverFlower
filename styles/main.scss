@@ -141,8 +141,8 @@ a {
   text-decoration: none;
 }
 
-li,
-li > a {
+.navbar__li > li,
+.navbar__li > li > a {
   list-style-type: none;
   font-family: "Oswald";
   font-style: normal;
@@ -240,6 +240,18 @@ li > a {
     url(../img/tcvety.png) top 60% left -10% no-repeat,
     url(../img/dopolnitel.png) top 100% left 100% no-repeat,
     url(../img/bukety.png) top 25% left 105% no-repeat;
+}
+
+.card__list > li {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  list-style-type: disc;
 }
 
 .catalog__title {

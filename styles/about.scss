@@ -90,33 +90,32 @@ a {
   margin-left: 10px;
 }
 
-/*.......................................Welcome..........................................................*/
+/*................................................Welcome........................................................*/
 
-.shipment {
+.about {
   background: #282828;
-}
-
-.shipment-wrapper {
-  padding-bottom: 200px;
-  background: url(../img/shipment/flower_up_right.png) top 0 left 100% no-repeat,
-    url(../img/shipment/flower_down_left.png) top 70% left 0 no-repeat,
-    url(../img/shipment/flower_foot.png) top 120% left 100% no-repeat,
-    url(../img/shipment/lover_flower.png) top 100% left 20% no-repeat,
-    url(../img/shipment/white_ellipse_up_right.png) top 0 left 100% no-repeat,
-    url(../img/shipment/white_ellipse_up_left.png) top 0 left 0 no-repeat,
-    url(../img/shipment/white_ellipse_middle_left.png) top 20% left 0% no-repeat,
-    url(../img/shipment/white-ellipse_middle_right.png) top 20% left 100%
-      no-repeat,
-    url(../img/shipment/white_ellipse_down_left.png) top 60% left 0 no-repeat,
-    url(../img/shipment/white_ellipse_down_center.png) top 70% left 100%
-      no-repeat,
-    url(../img/shipment/white_ellipse_foot_left.png) top 120% left 0 no-repeat,
-    url(../img/shipment/white_ellipse_foot_right.png) top 120% left 100%
-      no-repeat;
 }
 
 .welcome-content {
   padding-top: 35px;
+}
+
+.about-wrapper {
+  position: relative;
+  background: url(../img/about/flower_up_left.png) top 0 left 0 no-repeat,
+    url(../img/about/flower_down_right.png) top 120% left 100% no-repeat,
+    url(../img/about/yellow_ellipse_up_left.png) top 0 left 0 no-repeat,
+    url(../img/about/yellow_ellipse_up_right.png) top 10% left 100% no-repeat,
+    url(../img/about/yellow_ellipse_center.png) top 20% left 40% no-repeat,
+    url(../img/about/yellow_ellipse_down_left.png) top 120% left 0 no-repeat,
+    url(../img/about/yellow_ellipse_down_right.png) top 120% left 100% no-repeat;
+}
+
+.about__flower {
+  position: absolute;
+  top: -3%;
+  left: 50%;
+  z-index: 5;
 }
 
 .welcome-bread {
@@ -130,7 +129,7 @@ a {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 60px;
+  margin-bottom: 46px;
   margin-left: 2%;
 }
 
@@ -158,176 +157,162 @@ a {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #ffffff;
-}
-
-.title__up {
-  margin-left: 1%;
-}
-
-.title__down {
   margin-left: 10%;
+  margin-bottom: 100px;
 }
 
-.welcome__subtitle {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 21px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #d978ac;
-  margin-top: 40px;
-  margin-bottom: 10px;
-  margin-left: 10%;
+.subtitle__down {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-.welcome__text {
-  max-width: 550px;
-  font-family: "Oswald";
+.welcome-subtitle {
+  font-family: "Cormorant";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  letter-spacing: 0.04em;
+  font-size: 60px;
+  line-height: 64px;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: #ffffff;
-  margin-left: 10%;
+  color: #43ffd2;
+  margin-left: 20%;
 }
 
-.methods__title {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #d978ac;
-  margin-top: 100px;
-  margin-bottom: 20px;
-}
-
-.methods-blocks {
+.green__line {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  flex-grow: 1;
-  flex-wrap: wrap;
 }
 
-.method__block {
-  width: 250px;
-  height: 211px;
+.team {
   background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(20px);
-  border-radius: 20px;
-  padding: 20px 32px;
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
+  margin-left: 40%;
+  padding: 40px 20px;
+  margin-top: 20px;
+  z-index: 10;
 }
 
-.block__text {
+.team__title {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
   line-height: 26px;
-  text-align: center;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #ffffff;
-}
-
-.block__img {
   margin-bottom: 20px;
 }
 
-.cost-shipment {
-  width: 50%;
+.team__text {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+/*..............................................Garanty.........................................................*/
+
+.garanty {
+  padding-top: 100px;
+}
+
+.garanty-wrapper {
+  width: 80%;
   margin-left: 20%;
 }
 
-.cost__list {
-  max-width: 650px;
-  font-family: "Oswald";
+.garanty__title {
+  font-family: "Cormorant";
   font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 30px;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: #ffffff;
-  list-style-type: circle;
-}
-
-.conditions__list {
-  max-width: 770px;
-  margin-left: 15px;
-  margin-bottom: 100px;
-}
-
-.cost__white {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.cost__green {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 30px;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 64px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #43ffd2;
+  margin-bottom: 20px;
 }
 
-.advanced {
-  max-width: 970px;
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(20px);
-  border-radius: 20px;
-  padding: 30px;
-}
-
-.advanced__text {
+.garanty__text {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
   line-height: 30px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/*..............................................Order..........................................................*/
+
+.order {
+  padding-top: 100px;
+}
+
+.order__title {
+  width: 70%;
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 64px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #43ffd2;
+  margin-bottom: 20px;
+}
+
+.order__list {
+  margin-left: 25%;
+}
+
+.order__list > li {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 34px;
   letter-spacing: 0.04em;
   color: #ffffff;
 }
 
-.advanced__list {
-  margin-left: 15px;
+/*.................................................Garmonia.....................................................*/
+
+.garmonia {
+  padding-top: 165px;
+  padding-bottom: 200px;
 }
 
-.text__down {
-  margin-top: 30px;
+.garmonia__title {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 64px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 40px;
 }
 
-.advanced__title {
+.garmonia__text {
+  width: 42%;
   font-family: "Oswald";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 300;
   font-size: 20px;
   line-height: 30px;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: #d978ac;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  color: #ffffff;
+  margin-left: 20%;
 }
 
 /*.................................................FOOTER........................................................*/

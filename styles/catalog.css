@@ -64,8 +64,8 @@ a {
   text-decoration: none;
 }
 
-li,
-li > a {
+.navbar__li > li,
+.navbar__li > li > a {
   list-style-type: none;
   font-family: "Oswald";
   font-style: normal;

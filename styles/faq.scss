@@ -90,33 +90,32 @@ a {
   margin-left: 10px;
 }
 
-/*.......................................Welcome..........................................................*/
+/*................................................FAQ........................................................*/
 
-.shipment {
+.faq {
   background: #282828;
 }
 
-.shipment-wrapper {
+.faq-wrapper {
+  position: relative;
+  padding-top: 35px;
   padding-bottom: 200px;
-  background: url(../img/shipment/flower_up_right.png) top 0 left 100% no-repeat,
-    url(../img/shipment/flower_down_left.png) top 70% left 0 no-repeat,
-    url(../img/shipment/flower_foot.png) top 120% left 100% no-repeat,
-    url(../img/shipment/lover_flower.png) top 100% left 20% no-repeat,
-    url(../img/shipment/white_ellipse_up_right.png) top 0 left 100% no-repeat,
-    url(../img/shipment/white_ellipse_up_left.png) top 0 left 0 no-repeat,
-    url(../img/shipment/white_ellipse_middle_left.png) top 20% left 0% no-repeat,
-    url(../img/shipment/white-ellipse_middle_right.png) top 20% left 100%
-      no-repeat,
-    url(../img/shipment/white_ellipse_down_left.png) top 60% left 0 no-repeat,
-    url(../img/shipment/white_ellipse_down_center.png) top 70% left 100%
-      no-repeat,
-    url(../img/shipment/white_ellipse_foot_left.png) top 120% left 0 no-repeat,
-    url(../img/shipment/white_ellipse_foot_right.png) top 120% left 100%
-      no-repeat;
+  background: url(../img/faq/blue_ellipse_up_left.png) top 0 left 0 no-repeat,
+    url(../img/faq/blue_ellipse_up_right.png) top 0 left 110% no-repeat,
+    url(../img/faq/blue_ellipse_down_left.png) top 150% left 0 no-repeat,
+    url(../img/faq/blue_ellipse_down_right.png) top 130% left 100% no-repeat;
 }
 
-.welcome-content {
-  padding-top: 35px;
+.left__flower {
+  position: absolute;
+  left: 0;
+  top: -10%;
+}
+
+.right__flower {
+  position: absolute;
+  right: 0;
+  top: -4%;
 }
 
 .welcome-bread {
@@ -130,7 +129,7 @@ a {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 60px;
+  margin-bottom: 46px;
   margin-left: 2%;
 }
 
@@ -149,7 +148,13 @@ a {
   color: #ffffff;
 }
 
-.welcome__title {
+.faq-title {
+  display: flex;
+  gap: 30px;
+  margin-left: 2%;
+}
+
+.faq__title {
   font-family: "Cormorant";
   font-style: normal;
   font-weight: 400;
@@ -160,174 +165,59 @@ a {
   color: #ffffff;
 }
 
-.title__up {
-  margin-left: 1%;
+.faq__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.title__down {
-  margin-left: 10%;
+/*...............................................ACCORDEON.....................................................*/
+
+.accardeon {
+  padding-top: 60px;
+  padding-left: 2%;
 }
 
-.welcome__subtitle {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 21px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #d978ac;
-  margin-top: 40px;
-  margin-bottom: 10px;
-  margin-left: 10%;
+.accordeon-item {
+  width: 825px;
+  padding: 20px;
+  border: 1px solid #43ffd2;
 }
 
-.welcome__text {
-  max-width: 550px;
+.accordeon-title {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.item__title {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin-left: 10%;
-}
-
-.methods__title {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 700;
   font-size: 20px;
   line-height: 30px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #d978ac;
-  margin-top: 100px;
-  margin-bottom: 20px;
-}
-
-.methods-blocks {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-grow: 1;
-  flex-wrap: wrap;
-}
-
-.method__block {
-  width: 250px;
-  height: 211px;
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(20px);
-  border-radius: 20px;
-  padding: 20px 32px;
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
-}
-
-.block__text {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 26px;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.block__img {
-  margin-bottom: 20px;
-}
-
-.cost-shipment {
-  width: 50%;
-  margin-left: 20%;
-}
-
-.cost__list {
-  max-width: 650px;
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 30px;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: #ffffff;
-  list-style-type: circle;
-}
-
-.conditions__list {
-  max-width: 770px;
-  margin-left: 15px;
-  margin-bottom: 100px;
-}
-
-.cost__white {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.cost__green {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 30px;
-  letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #43ffd2;
 }
 
-.advanced {
-  max-width: 970px;
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(20px);
-  border-radius: 20px;
-  padding: 30px;
+.item__img {
+  position: absolute;
+  right: 0;
 }
 
-.advanced__text {
+.item__text {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
   line-height: 30px;
-  letter-spacing: 0.04em;
   color: #ffffff;
+  padding-top: 20px;
+  display: none;
 }
 
-.advanced__list {
-  margin-left: 15px;
-}
-
-.text__down {
-  margin-top: 30px;
-}
-
-.advanced__title {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #d978ac;
-  margin-top: 30px;
-  margin-bottom: 20px;
+.show {
+  display: block;
 }
 
 /*.................................................FOOTER........................................................*/

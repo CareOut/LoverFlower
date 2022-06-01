@@ -1,0 +1,605 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+@font-face {
+  font-family: Cormorant;
+  src: url(../styles/fonts/Cormorant-Regular.otf);
+}
+
+@font-face {
+  font-family: Oswald;
+  src: url(../styles/fonts/Oswald-Regular.ttf);
+}
+
+@font-face {
+  font-family: Roboto Condensed;
+  src: url(../styles/fonts/RobotoCondensed-Regular.ttf);
+}
+
+/*....................................................HEADER........................................................*/
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.head {
+  background: #000000;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.navbar__li > li,
+.navbar__li > li > a {
+  list-style-type: none;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-left: 20px;
+}
+
+.navbar__li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__link:hover {
+  color: #43ffd2;
+}
+
+.header__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 150px;
+  opacity: 1;
+}
+
+.contacts__number {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #43ffd2;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+/*.................................................FOOTER........................................................*/
+.footer {
+  background: #000000;
+}
+
+.footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 30px 0 50px 0;
+}
+
+.footer-column-1 {
+  width: 23%;
+}
+
+.footer-column-2 {
+  width: 15%;
+  padding-top: 30px;
+}
+
+.footer-column-3 {
+  width: 15%;
+  padding-top: 30px;
+}
+
+.footer-column-4 {
+  width: 15%;
+  padding-top: 30px;
+}
+
+.footer-mobile {
+  padding-top: 30px;
+}
+
+.footer-mobile > p {
+  margin-bottom: 20px;
+}
+
+.footer__title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #43ffd2;
+  margin-bottom: 10px;
+}
+
+.column__title {
+  margin-bottom: 20px;
+}
+
+.footer-text {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-list > li {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  list-style-type: none;
+  margin: 0 0 5px 0;
+}
+
+.footer-mobile__title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #43ffd2;
+}
+
+.footer-mobile__text {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-mobile-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+}
+
+.footer__logo {
+  margin-bottom: 10px;
+}
+
+.footer__icon {
+  margin-right: 20px;
+}
+
+/*..............................................CORPORATE........................................................*/
+.corporate {
+  background: #282828;
+}
+
+.corporate-wrapper {
+  position: relative;
+  padding-top: 35px;
+  padding-bottom: 130px;
+  background: url(../img/corporate/flower_mid.png) top 55% left 0 no-repeat, url(../img/corporate/flower_mid_down.png) top 55% left 0 no-repeat, url(../img/corporate/lover_flower.png) top 95% left 80% no-repeat, url(../img/corporate/orange_ellipse_up_left.png) top 0 left 0 no-repeat, url(../img/corporate/orange_ellipse_up_right.png) top 0 left 100% no-repeat, url(../img/corporate/orange_ellipse_center.png) top 45% left 50% no-repeat, url(../img/corporate/orange_ellipse_foot_left.png) top 110% left 0 no-repeat, url(../img/corporate/oranfe_ellipse_foot_right.png) top 110% left 100% no-repeat;
+}
+
+.flower__left {
+  position: absolute;
+  top: -1%;
+  left: 0;
+}
+
+.flower__right {
+  position: absolute;
+  top: -1%;
+  right: -1%;
+}
+
+.welcome-bread {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 46px;
+  margin-left: 2%;
+}
+
+.bread__text {
+  margin: 0px 5px;
+}
+
+.bread__link {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.welcome-title {
+  margin-left: 10%;
+}
+
+.welcome__title {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 121px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.welcome__subtitle {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.down {
+  margin-left: 10%;
+}
+
+.welcome__text {
+  width: 75%;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 100px;
+}
+
+.green {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #43ffd2;
+}
+
+.cooperation {
+  margin-top: 100px;
+  width: 65%;
+  margin-left: 9%;
+}
+
+.cooperation__text {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/*..........................................BONUS..............................................................*/
+.bonus {
+  padding-top: 100px;
+}
+
+.bonus__title {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.green__text {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #43ffd2;
+}
+
+.table__cell {
+  width: 500px;
+  height: 80px;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  margin-top: 10px;
+  padding: 10px 20px;
+}
+
+.bonus-table {
+  margin-top: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.table-column {
+  width: 45%;
+}
+
+.table__title {
+  text-align: center;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.large {
+  height: 110px;
+}
+
+/*..............................................LEVELS.........................................................*/
+.levels {
+  margin-top: 100px;
+  margin-left: 50%;
+}
+
+.levels__title {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #43ffd2;
+  margin-bottom: 30px;
+}
+
+.levels__list {
+  margin-top: 20px;
+  margin-left: 3%;
+}
+
+.levels__list > li {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/*....................................................request-Form............................................*/
+.request-form {
+  padding-top: 185px;
+}
+
+.form-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.form__title {
+  margin-bottom: 60px;
+}
+
+.form__input {
+  width: 540px;
+  height: 60px;
+  border: 1px solid #555555;
+  background: transparent;
+  margin-bottom: 20px;
+  padding: 20px;
+  color: #ffffff;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.06em;
+}
+
+.form__label {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+input,
+label {
+  display: block;
+}
+
+.form__input::-webkit-input-placeholder {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  color: #555555;
+}
+
+.form__input:-ms-input-placeholder {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  color: #555555;
+}
+
+.form__input::-ms-input-placeholder {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  color: #555555;
+}
+
+.form__input::placeholder {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  color: #555555;
+}
+
+.form__button {
+  width: 255px;
+  height: 50px;
+  background: #43ffd2;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+}
+
+.form__text {
+  max-width: 340px;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+.form__link {
+  display: inline;
+}
+/*# sourceMappingURL=corporate.css.map */
