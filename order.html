@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles/contacts.css" />
-    <script src="js/contacts.js" defer></script>
+    <link rel="stylesheet" href="styles/order.css" />
+    <script src="js/order.js" defer></script>
   </head>
   <body>
     <section class="head">
@@ -46,91 +46,197 @@
         </header>
       </div>
     </section>
-    <section class="contacts">
-      <div class="contacts-wrapper">
+    <section class="order">
+      <div class="order-wrapper">
         <div class="container">
-          <div class="welcome-bread">
-            <a class="bread__link" href="index.html">Главная</a>
-            <p class="bread__text">/</p>
-            <a class="bread__link" href="#" disable>контакты</a>
-          </div>
-          <h2 class="contacts__title">контакты</h2>
-          <div class="contacts-blocks">
-            <div class="contacts__block">
-              <div class="block__title">время работы</div>
-              <div class="block__text">
-                с 10:00 до 21:00 <br />
-                без выходных
-              </div>
+          <section class="welcome">
+            <div class="welcome-bread">
+              <a class="bread__link" href="index.html">Главная</a>
+              <p class="bread__text">/</p>
+              <a class="bread__link" href="#" disable>оформление заказа</a>
             </div>
-            <div class="contacts__block">
-              <div class="block__title">Адрес</div>
-              <div class="block__text">
-                г. Минск, ул. Тимирязева 67, комн. 112
-              </div>
+            <div class="welcome-title">
+              <h3 class="welcome__title">оформление</h3>
+              <h3 class="welcome__title down">заказа</h3>
             </div>
-            <div class="contacts__block">
-              <div class="block__title">Телефон</div>
-              <div class="block__text">+375 (29) 113-69-69</div>
-            </div>
-            <div class="contacts__block">
-              <div class="block__title">E-mail</div>
-              <div class="block__text">zakaz@loverflower.by</div>
-            </div>
-          </div>
-          <section class="contacts-write">
-            <div class="contacts-welcome">
-              <div class="contacts-title">
-                <h3 class="contacts__title title">напишите</h3>
-                <h3 class="contacts__title title">нам</h3>
-              </div>
-              <div class="contacts-question">
-                <div class="question__img">
-                  <img src="img/contacts/green_line.png" alt="" />
+          </section>
+          <section class="making-order">
+            <h5 class="making__title">Оформление заказа</h5>
+            <div class="order-columns">
+              <form class="form-form" action="#">
+                <p class="making__text">Контактные данные</p>
+                <label class="form__label"
+                  >Ваше имя*
+                  <input
+                    class="form__input"
+                    type="text"
+                    placeholder="Введите ваше имя"
+                /></label>
+                <label class="form__label"
+                  >Ваш телефон*
+                  <input
+                    class="form__input"
+                    type="text"
+                    placeholder="+7 (977) 777-77-77"
+                /></label>
+                <label class="form__label"
+                  >Ваш e-mail*
+                  <input
+                    class="form__input"
+                    type="text"
+                    placeholder="Введите вашу почту"
+                /></label>
+                <label class="form__label"
+                  >Телефон получателя (необязательно)
+                  <input
+                    class="form__input"
+                    type="text"
+                    placeholder="+7 (977) 777-77-77"
+                /></label>
+                <label class="form__label"
+                  >Имя получателя (необязательно)
+                  <input
+                    class="form__input"
+                    type="text"
+                    placeholder="Введите имя получателя"
+                /></label>
+                <label class="form__label"
+                  >Комментарий к заказу
+                  <input
+                    class="form__input"
+                    type="text"
+                    placeholder="Примечания к вашеу заказу,  особые пожелания отделу доставки"
+                /></label>
+                <p class="making__text cargo">Доставка</p>
+                <label class="radio">
+                  <input type="radio" name="cargo" /> Самовывоз</label
+                >
+                <label class="radio">
+                  <input type="radio" name="cargo" checked /> Доставка
+                  курьером</label
+                >
+                <label class="form__label"
+                  >Город*
+                  <select class="form__input">
+                    <option value="minsk">Минск</option>
+                    <option value="moscow">Москва</option>
+                    <option value="ekat">Екатеринбург</option>
+                  </select></label
+                >
+                <label class="form__label"
+                  >Улица*
+                  <input
+                    class="form__input"
+                    type="text"
+                    placeholder="Введите улицу"
+                /></label>
+                <div class="adress">
+                  <label class="form__label"
+                    >Корп/стр
+                    <input
+                      class="adress__input"
+                      type="text"
+                      placeholder="Корп/стр"
+                  /></label>
+                  <label class="form__label"
+                    >Дом
+                    <input class="adress__input" type="text" placeholder="Дом"
+                  /></label>
+                  <label class="form__label"
+                    >Кв/офис
+                    <input
+                      class="adress__input"
+                      type="text"
+                      placeholder="Кв/офис"
+                  /></label>
                 </div>
-                <p class="question__text">
-                  Отправьте ваш вопрос, заказ, предложение или жалобу через
-                  форму обратной связи, и наш специалист свяжется с вами в
-                  течение 15 минут.
+                <label class="form__label"
+                  >Время доставки
+                  <input class="adress__input" type="text" placeholder="__/__"
+                /></label>
+                <p class="label__text">Стоимость доставки 0 ₽</p>
+                <p class="making__text pay">Оплата</p>
+                <div class="promocode">
+                  <label class="form__label"
+                    >Промокод
+                    <input
+                      class="adress__input"
+                      type="text"
+                      placeholder="Промокод" /></label
+                  ><button class="promo__button">Применить</button>
+                </div>
+                <div class="totalsum">
+                  <p class="totalsum__text">Общая сумма заказа</p>
+                  <div class="totalsum__value totalsum__text">334.00 ₽</div>
+                </div>
+                <div class="discount">
+                  <div class="discount__text">Скидка =</div>
+                  <div class="discout__text discount__value">0 ₽</div>
+                </div>
+                <div class="ship">
+                  <div class="discount__text">Доставка =</div>
+                  <div class="discout__text ship__value">0 ₽</div>
+                </div>
+                <button type="submit" class="content__button form__button">
+                  отправить
+                </button>
+                <p class="form__text">
+                  Нажимая на кнопку «Отправить», я даю свое согласие на
+                  обработку персональных данных, в соответствии с
+                  <a href="#" class="form__link"
+                    >Политикой конфиденциальности</a
+                  >
                 </p>
+              </form>
+              <div class="order-order">
+                <p class="making__text">Ваш заказ:</p>
+                <div class="cart__item">
+                  <div class="item__left">
+                    <div class="item__img">
+                      <img src="img/cart/cart_flower_1.png" alt="" />
+                    </div>
+                    <div class="item-description">
+                      <div class="item__title">рубиновые искры</div>
+                      <div class="item-quantity">
+                        <div class="item__minus">
+                          <img src="img/cart/minus.png" alt="" />
+                        </div>
+                        <div class="item__quantity">1</div>
+                        <div class="item__plus">
+                          <img src="img/cart/plus.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item__right">
+                    <div class="item__price">167.00 ₽</div>
+                    <div class="item__delete">Удалить</div>
+                  </div>
+                </div>
+                <div class="cart__item">
+                  <div class="item__left">
+                    <div class="item__img">
+                      <img src="img/cart/cart_flower_2.png" alt="" />
+                    </div>
+                    <div class="item-description">
+                      <div class="item__title">рубиновые искры</div>
+                      <div class="item-quantity">
+                        <div class="item__minus">
+                          <img src="img/cart/minus.png" alt="" />
+                        </div>
+                        <div class="item__quantity">1</div>
+                        <div class="item__plus">
+                          <img src="img/cart/plus.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item__right">
+                    <div class="item__price">167.00 ₽</div>
+                    <div class="item__delete">Удалить</div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </section>
-          <section class="form">
-            <form action="#" class="right-form__form">
-              <input class="form__input" type="text" placeholder="ваше имя" />
-              <input
-                class="form__input"
-                type="phone"
-                placeholder="+7 (977) 777-77-77"
-              />
-              <textarea
-                name="textarea"
-                class="form__textarea"
-                placeholder="ваш комментарий"
-              ></textarea>
-              <button type="submit" class="content__button form__button">
-                отправить
-              </button>
-              <p class="form__text">
-                Нажимая на кнопку «Отправить», я даю свое согласие на обработку
-                персональных данных, в соответствии с
-                <a href="#" class="form__link">Политикой конфиденциальности</a>
-              </p>
-            </form>
-          </section>
-          <section class="map">
-            <div class="map__title">Мы на карте</div>
-            <div class="map__map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2349.36985609348!2d27.506684815273267!3d53.92517273889845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc56c6b46c34f%3A0xb4592a0d073badb1!2z0YPQuy4g0KLQuNC80LjRgNGP0LfQtdCy0LAgNjcsINCc0LjQvdGB0LogMjIwMDM1LCDQkdC10LvQsNGA0YPRgdGM!5e0!3m2!1sru!2sru!4v1654060093662!5m2!1sru!2sru"
-                width="1100"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
             </div>
           </section>
         </div>
@@ -307,7 +413,7 @@
             <p class="total__text">Предварительный итог:</p>
             <div class="total__value total__text">315.00 руб.</div>
           </div>
-          <p class="order">
+          <p class="order__text">
             Чтобы узнать стоимость доставки, перейдите к оформлению заказа.
           </p>
           <a href="order.html"

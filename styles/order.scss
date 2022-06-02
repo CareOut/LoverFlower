@@ -90,32 +90,27 @@ a {
   margin-left: 10px;
 }
 
-/*................................................FAQ........................................................*/
+/*...............................................ORDER...........................................................*/
 
-.faq {
+.order {
   background: #282828;
 }
 
-.faq-wrapper {
-  position: relative;
+.order-wrapper {
   padding-top: 35px;
-  padding-bottom: 200px;
-  background: url(../img/faq/blue_ellipse_up_left.png) top 0 left 0 no-repeat,
-    url(../img/faq/blue_ellipse_up_right.png) top 0 left 110% no-repeat,
-    url(../img/faq/blue_ellipse_down_left.png) top 150% left 0 no-repeat,
-    url(../img/faq/blue_ellipse_down_right.png) top 130% left 100% no-repeat;
-}
-
-.left__flower {
-  position: absolute;
-  left: 0;
-  top: -10%;
-}
-
-.right__flower {
-  position: absolute;
-  right: 0;
-  top: -4%;
+  padding-bottom: 190px;
+  background: url(../img/order/flower_up_left.png) top 0 left 0 no-repeat,
+    url(../img/order/flower_up_right.png) top -10% left 100% no-repeat,
+    url(../img/order/flower_up_right_right.png) top -10% left 100% no-repeat,
+    url(../img/order/lover_flower.png) top 15% left 50% no-repeat,
+    url(../img/order/payment.png) top 90% left 50% no-repeat,
+    url(../img/order/blue_ellipse_up_left.png) top 0 left 0 no-repeat,
+    url(../img/order/purple_ellipse_up_right.png) top 0 left 100% no-repeat,
+    url(../img/order/blue_ellipse_mid_right.png) top 50% left 100% no-repeat,
+    url(../img/order/purple_ellipse_mid_right.png) top 60% left 100% no-repeat,
+    url(../img/order/blue_ellipse_foot_left.png) top 120% left 0 no-repeat,
+    url(../img/order/blue_ellipse_foot_center.png) top 120% left 50% no-repeat,
+    url(../img/order/purple_ellipse_foot_right.png) top 120% left 100% no-repeat;
 }
 
 .welcome-bread {
@@ -148,13 +143,7 @@ a {
   color: #ffffff;
 }
 
-.faq-title {
-  display: flex;
-  gap: 30px;
-  margin-left: 2%;
-}
-
-.faq__title {
+.welcome__title {
   font-family: "Cormorant";
   font-style: normal;
   font-weight: 400;
@@ -165,61 +154,260 @@ a {
   color: #ffffff;
 }
 
-.faq__img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.down {
+  margin-left: 10%;
 }
 
-/*...............................................ACCORDEON.....................................................*/
+/*...........................................MAKING ORDER.......................................................*/
 
-.accardeon {
-  padding-top: 60px;
-  padding-left: 2%;
+.making-order {
+  padding-top: 80px;
 }
 
-.accordeon-item {
-  width: 825px;
-  padding: 20px;
-  border: 1px solid #43ffd2;
-}
-
-.accordeon-title {
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-
-.item__title {
+.making__title {
   font-family: "Oswald";
   font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 44px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #43ffd2;
+  margin-bottom: 40px;
+}
+
+.making__text {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #43ffd2;
 }
 
-.item__img {
-  position: absolute;
-  right: 0;
+/*................................................FORM...........................................................*/
+
+.order-columns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.item__text {
+.form-form {
+  width: 50%;
+}
+
+.order-order {
+  width: 35%;
+}
+
+.form__input {
+  width: 540px;
+  height: 60px;
+  border: 1px solid #555555;
+  background: transparent;
+  margin-bottom: 20px;
+  padding: 20px;
+  color: #ffffff;
   font-family: "Oswald";
   font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 30px;
-  color: #ffffff;
-  padding-top: 20px;
-  display: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.06em;
 }
 
-.show {
+.form__label {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+input,
+label {
   display: block;
 }
 
+.form__input::placeholder {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  color: #555555;
+}
+
+.form__button {
+  width: 255px;
+  height: 50px;
+  background: #43ffd2;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.form__text {
+  max-width: 340px;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+.form__link {
+  display: inline;
+}
+
+.cargo {
+  margin-top: 60px;
+}
+
+.radio {
+  display: inline;
+}
+
+.adress {
+  width: 540px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.adress__input {
+  width: 160px;
+  height: 60px;
+  border: 1px solid #555555;
+  padding: 20px;
+  background: transparent;
+}
+
+.adress__input::placeholder {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+
+  color: #555555;
+}
+
+.pay {
+  margin-top: 60px;
+}
+
+.label__text {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #555555;
+}
+
+.promocode {
+  display: flex;
+  align-items: center;
+}
+
+.promo__button {
+  width: 190px;
+  height: 60px;
+  border: 1px solid #43ffd2;
+  background: transparent;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.06em;
+  color: #43ffd2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.promo__button:hover {
+  background: #43ffd2;
+  color: #000000;
+}
+
+.totalsum {
+  width: 540px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.totalsum__text {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 44px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #43ffd2;
+}
+
+.discount {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.discount__text {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.ship {
+  display: flex;
+  gap: 5px;
+}
+
+.content__button:hover {
+  background: #7d2253;
+  color: #ffffff;
+}
+
+select {
+  display: block;
+}
 /*.................................................FOOTER........................................................*/
 
 .footer {
@@ -558,7 +746,7 @@ a {
   color: #43ffd2;
 }
 
-.order {
+.order__text {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
