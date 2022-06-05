@@ -113,7 +113,7 @@ a {
 .order-wrapper {
   padding-top: 35px;
   padding-bottom: 190px;
-  background: url(../img/order/flower_up_left.png) top 0 left 0 no-repeat, url(../img/order/flower_up_right.png) top -10% left 100% no-repeat, url(../img/order/flower_up_right_right.png) top -10% left 100% no-repeat, url(../img/order/lover_flower.png) top 15% left 50% no-repeat, url(../img/order/payment.png) top 90% left 50% no-repeat, url(../img/order/blue_ellipse_up_left.png) top 0 left 0 no-repeat, url(../img/order/purple_ellipse_up_right.png) top 0 left 100% no-repeat, url(../img/order/blue_ellipse_mid_right.png) top 50% left 100% no-repeat, url(../img/order/purple_ellipse_mid_right.png) top 60% left 100% no-repeat, url(../img/order/blue_ellipse_foot_left.png) top 120% left 0 no-repeat, url(../img/order/blue_ellipse_foot_center.png) top 120% left 50% no-repeat, url(../img/order/purple_ellipse_foot_right.png) top 120% left 100% no-repeat;
+  background: url(../img/order/flower_up_left.png) top 0 left 0 no-repeat, url(../img/order/flower_up_right.png) top -10% left 100% no-repeat, url(../img/order/flower_up_right_right.png) top -10% left 100% no-repeat, url(../img/order/lover_flower.png) top 15% left 50% no-repeat, url(../img/order/payment.png) top 95% left 50% no-repeat, url(../img/order/blue_ellipse_up_left.png) top 0 left 0 no-repeat, url(../img/order/purple_ellipse_up_right.png) top 0 left 100% no-repeat, url(../img/order/blue_ellipse_mid_right.png) top 50% left 100% no-repeat, url(../img/order/purple_ellipse_mid_right.png) top 60% left 100% no-repeat, url(../img/order/blue_ellipse_foot_left.png) top 120% left 0 no-repeat, url(../img/order/blue_ellipse_foot_center.png) top 120% left 50% no-repeat, url(../img/order/purple_ellipse_foot_right.png) top 120% left 100% no-repeat;
 }
 
 .welcome-bread {
@@ -328,6 +328,7 @@ label {
 
 .cargo {
   margin-top: 60px;
+  margin-bottom: 20px;
 }
 
 .radio {
@@ -353,6 +354,18 @@ label {
   border: 1px solid #555555;
   padding: 20px;
   background: transparent;
+  color: #ffffff;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.06em;
+}
+
+option {
+  background: #282828;
+  margin-bottom: 20px;
 }
 
 .adress__input::-webkit-input-placeholder {
@@ -397,6 +410,100 @@ label {
 
 .pay {
   margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.custom__radio + label {
+  margin-bottom: 20px;
+}
+
+.custom__radio:checked,
+.custom__radio:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.custom__radio:checked + label,
+.custom__radio:not(:checked) + label {
+  position: relative;
+  padding-left: 40px;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.custom__radio:checked + label:before,
+.custom__radio:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 14px;
+  height: 14px;
+  border: 0.5px solid #ffffff;
+  background-color: transparent;
+}
+
+.custom__radio:checked + label:before,
+.custom__radio:not(:checked) + label:before {
+  border-radius: 100%;
+}
+
+.custom__radio:checked + label:after,
+.custom__radio:not(:checked) + label:after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.custom__radio:checked + label:after,
+.custom__radio:not(:checked) + label:after {
+  left: 3px;
+  top: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: #ffffff;
+}
+
+.custom__radio:not(:checked) + label:after {
+  opacity: 0;
+}
+
+.custom__radio:checked + label:after {
+  opacity: 1;
+}
+
+.custom__radio:checked + label {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.green {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.06em;
+  color: #43ffd2;
+}
+
+.label__radio {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #353535;
 }
 
 .label__text {
@@ -417,6 +524,7 @@ label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 60px;
 }
 
 .promo__button {

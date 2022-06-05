@@ -28,8 +28,13 @@
 
 .intro {
   width: 100%;
-  background: url(../img/buket_main_2.png) center/cover no-repeat;
-  min-height: 1275px;
+  background: black;
+}
+
+.intro-background {
+  width: 100%;
+  height: 1250px;
+  background: url(../img/buket_main_2.png) top 0% left 0%/cover no-repeat;
 }
 
 .intro__title {
@@ -46,8 +51,8 @@
 .intro-wrapper {
   position: relative;
   width: 100%;
-  background: url(../img/flower.png) top 40% left 45% no-repeat, url(../img/buket_2.png) center/cover no-repeat, url(../img/blue_ellipse.png) top 120% left -50%/70% no-repeat, url(../img/rev_ellipse_purple.png) top 40% left 100% no-repeat, url(../img/lover.png) top 20% left 50% no-repeat;
-  min-height: 1000px;
+  height: 980px;
+  background: url(../img/flower.png) top 40% left 45% no-repeat, url(../img/buket_2.png) top 0% left 0%/cover no-repeat, url(../img/blue_ellipse.png) top 120% left -50% no-repeat, url(../img/rev_ellipse_purple.png) top 40% left 100% no-repeat, url(../img/lover.png) top 20% left 50% no-repeat;
 }
 
 .intro-content {
@@ -276,9 +281,13 @@ a {
   margin-bottom: 200px;
 }
 
+.header__burger {
+  display: none;
+}
+
 /*..............................................CATALOG.........................................................*/
 .catalog {
-  background: #040a0a;
+  background: black;
   padding-top: 100px;
   padding-bottom: 150px;
 }
@@ -443,7 +452,7 @@ a {
 
 /*............................................POPULAR..............................................................*/
 .popular {
-  background: #040a0a;
+  background: black;
 }
 
 .popular-wrapper {
@@ -596,7 +605,7 @@ a {
 
 /*.................................................ORDER..........................................................*/
 .order {
-  background: #040a0a;
+  background: black;
 }
 
 .order-wrapper {
@@ -652,7 +661,7 @@ a {
 
 /*....................................................POVOD.....................................................*/
 .povod {
-  background: #040a0a;
+  background: black;
 }
 
 .povod-wrapper {
@@ -1013,6 +1022,15 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.instagram-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .instagram-social {
@@ -1485,5 +1503,505 @@ a {
 .cart__button:hover {
   background: #43ffd2;
   color: #000000;
+}
+
+/*........................................ADAPTIVE..............................................................*/
+@media only screen and (max-width: 430px) {
+  .container {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .header {
+    width: 100%;
+  }
+  .header-wrapper {
+    margin-top: 30px;
+  }
+  .header__navbar {
+    display: none;
+  }
+  .header-footer {
+    display: none;
+  }
+  .header__contacts {
+    width: 100%;
+    margin: 0;
+    opacity: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header__phone {
+    display: none;
+  }
+  .header__burger {
+    display: block;
+  }
+  .contacts__number {
+    display: none;
+  }
+  .header__logo {
+    display: none;
+  }
+  .intro-background {
+    width: 100%;
+    background: url(../img/buket_main_2.png) top 0% left 0% no-repeat;
+    background-size: 430px auto;
+    min-height: 600px;
+  }
+  .intro {
+    height: 500px;
+  }
+  .intro-wrapper {
+    position: relative;
+    width: 100%;
+    background: url(../img/flower.png) top 7% left 50% no-repeat, url(../img/buket_2.png) top 0% left 0% no-repeat, url(../img/blue_ellipse.png) top -5% left -20% no-repeat, url(../img/rev_ellipse_purple.png) top -10% left 20% no-repeat, url(../img/lover.png) top 3% left 50% no-repeat;
+    min-height: 500px;
+    background-size: 221px auto, 430px auto, 80%, 80%, 178px auto;
+  }
+  .button__link {
+    margin: 0;
+    -webkit-transform: translateY(350%);
+            transform: translateY(350%);
+  }
+  .catalog__title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    margin-left: 10px;
+  }
+  .content-description {
+    display: none;
+  }
+  .content__text {
+    max-width: 212px;
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    -webkit-transform: translateY(400%);
+            transform: translateY(400%);
+  }
+  .catalog-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px 10px;
+  }
+  .card-made,
+  .card-flowers,
+  .card-more {
+    width: 100%;
+    margin: 0px 0px 40px 0px;
+  }
+  .content-down {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .catalog-wrapper {
+    background: url(../img/blue_ellipse.png) top 10% left 50% no-repeat, url(../img/purple_ellipse.png) top 90% left 50% no-repeat;
+    background-size: 150%, 150%;
+  }
+  .catalog {
+    padding-bottom: 100px;
+  }
+  .popular-wrapper-wrap p {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 60px;
+    padding: 0px 10px;
+    margin-bottom: 25px;
+  }
+  .title {
+    margin-left: 60px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .popular-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .popular-card {
+    margin-bottom: 40px;
+  }
+  .popular__link {
+    margin-top: 0;
+    margin-left: 10px;
+  }
+  .popular-wrapper {
+    background: url(../img/howMake.png) top 100% left 25%/90% no-repeat, url(../img/popular_ellipse_purple.png) top 103% left 50%/100% no-repeat;
+    padding-bottom: 100px;
+  }
+  .order-wrapper {
+    padding-bottom: 180px;
+    padding-top: 100px;
+    background: url(../img/order.png) top -10% left 0%/60% no-repeat, url(../img/order_text.png) top 3% left 70%/40% no-repeat, url(../img/lover_flower.png) top 100% left 90% no-repeat, url(../img/popular_ellipse_blue.png) top 100% left 0/80% no-repeat;
+  }
+  .order-content {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0px 10px;
+  }
+  .order-steps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .steps-right {
+    margin: 0;
+  }
+  .step__title {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d978ac;
+  }
+  .step__text {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+  }
+  .order__tire,
+  .one {
+    margin-left: 60%;
+    margin-bottom: 20px;
+  }
+  .two {
+    margin-left: 40%;
+  }
+  .three {
+    margin-left: 25%;
+  }
+  .povod-content {
+    padding: 0px 10px;
+  }
+  .povod-up {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .up__title-down {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+  }
+  .title__img {
+    width: 50%;
+    margin: 0;
+  }
+  .line__img {
+    width: 100%;
+  }
+  .up__title {
+    font-family: "Cormorant";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .up__title h4 {
+    font-family: "Cormorant";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .up__img {
+    display: none;
+  }
+  .down__img {
+    display: none;
+  }
+  .povod-down {
+    width: 100%;
+  }
+  .down__text {
+    margin-left: 0;
+  }
+  .down__text p {
+    width: 100%;
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  .povod__list li {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  .povod-wrapper {
+    padding-bottom: 85px;
+  }
+  .questions__image {
+    display: none;
+  }
+  .questions-content {
+    padding: 0px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .questions-title h5 {
+    font-family: "Cormorant";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .questions-title__down {
+    margin-left: 0px;
+  }
+  .content-left,
+  .content-right {
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .content-right {
+    margin-top: 115px;
+  }
+  .right-form {
+    width: 100%;
+  }
+  .right-form__form {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .form__input,
+  .form__textarea {
+    width: 100%;
+  }
+  .questions-wrapper {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    background: url(../img/loza_back.png) top -10% left 100% no-repeat, url(../img/have_any_questions.png) top 15% left 60%/40% no-repeat, url(../img/quest_blue_ellipse.png) top 0 left 40%/90% no-repeat, url(../img/quest_purple_ellipse.png) top 0 left 20%/90% no-repeat;
+  }
+  .instagram-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .instagram__img {
+    width: 45%;
+  }
+  .instagram__img img {
+    width: 100%;
+  }
+  .instagram-images {
+    gap: 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .instagram-social {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .instagram__line {
+    width: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .instagram__line img {
+    width: 70%;
+  }
+  .social-icons {
+    width: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .icon__icon img {
+    width: 100%;
+  }
+  .instagram-wrapper {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background: url(../img/our_social_networks_ad.png) top 15% left 20% no-repeat, url(../img/inst_purple.png) top -100% left 100%/100% no-repeat, url(../img/inst_blue_2.png) top 120% left -50%/100% no-repeat;
+  }
+  /*.........................................adaptive footer..................................................*/
+  .footer-column-2,
+  .footer-column-3 {
+    display: none;
+  }
+  .footer-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 0px;
+  }
+  .footer-column-4 {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-mobile {
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-column-1 {
+    width: 100%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */

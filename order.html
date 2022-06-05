@@ -76,7 +76,7 @@
                   >Ваш телефон*
                   <input
                     class="form__input"
-                    type="text"
+                    type="tel"
                     placeholder="+7 (977) 777-77-77"
                 /></label>
                 <label class="form__label"
@@ -90,7 +90,7 @@
                   >Телефон получателя (необязательно)
                   <input
                     class="form__input"
-                    type="text"
+                    type="tel"
                     placeholder="+7 (977) 777-77-77"
                 /></label>
                 <label class="form__label"
@@ -108,13 +108,29 @@
                     placeholder="Примечания к вашеу заказу,  особые пожелания отделу доставки"
                 /></label>
                 <p class="making__text cargo">Доставка</p>
-                <label class="radio">
-                  <input type="radio" name="cargo" /> Самовывоз</label
-                >
-                <label class="radio">
-                  <input type="radio" name="cargo" checked /> Доставка
-                  курьером</label
-                >
+                <div>
+                  <input
+                    class="custom__radio"
+                    type="radio"
+                    name="rb"
+                    id="rb1"
+                    checked
+                  />
+                  <label class="label__radio" for="rb1">Самовывоз</label>
+                </div>
+
+                <div>
+                  <input
+                    class="custom__radio"
+                    type="radio"
+                    name="rb"
+                    id="rb2"
+                    checked
+                  />
+                  <label class="label__radio checked" for="rb2"
+                    >Доставка курьером</label
+                  >
+                </div>
                 <label class="form__label"
                   >Город*
                   <select class="form__input">
@@ -152,12 +168,60 @@
                 </div>
                 <label class="form__label"
                   >Время доставки
-                  <input class="adress__input" type="text" placeholder="__/__"
+                  <input class="adress__input" type="time" placeholder="__/__"
                 /></label>
                 <p class="label__text">Стоимость доставки 0 ₽</p>
                 <p class="making__text pay">Оплата</p>
+                <input
+                  class="custom__radio"
+                  type="radio"
+                  name="rp"
+                  id="rp1"
+                  checked
+                />
+                <label class="label__radio" for="rp1">Банковская карта</label>
+                <input
+                  class="custom__radio"
+                  type="radio"
+                  name="rp"
+                  id="rp2"
+                  checked
+                />
+                <label class="label__radio" for="rp2">Наличными</label>
+                <input
+                  class="custom__radio"
+                  type="radio"
+                  name="rp"
+                  id="rp3"
+                  checked
+                />
+                <label class="label__radio" for="rp3">Apple pay</label>
+                <input
+                  class="custom__radio"
+                  type="radio"
+                  name="rp"
+                  id="rp4"
+                  checked
+                />
+                <label class="label__radio" for="rp4">Google pay</label>
+                <input
+                  class="custom__radio"
+                  type="radio"
+                  name="rp"
+                  id="rp5"
+                  checked
+                />
+                <label class="label__radio" for="rp5">Криптовалюта</label>
+                <input
+                  class="custom__radio"
+                  type="radio"
+                  name="rp"
+                  id="rp6"
+                  checked
+                />
+                <label class="label__radio" for="rp6">С расчетного счета</label>
                 <div class="promocode">
-                  <label class="form__label"
+                  <label class="form__label green"
                     >Промокод
                     <input
                       class="adress__input"
@@ -171,11 +235,11 @@
                 </div>
                 <div class="discount">
                   <div class="discount__text">Скидка =</div>
-                  <div class="discout__text discount__value">0 ₽</div>
+                  <div class="discount__text discount__value">0 ₽</div>
                 </div>
                 <div class="ship">
                   <div class="discount__text">Доставка =</div>
-                  <div class="discout__text ship__value">0 ₽</div>
+                  <div class="discount__text ship__value">0 ₽</div>
                 </div>
                 <button type="submit" class="content__button form__button">
                   отправить
