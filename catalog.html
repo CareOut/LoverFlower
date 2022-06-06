@@ -37,8 +37,17 @@
                   </ul>
                 </div>
                 <div class="header__contacts">
-                  <div><img src="img/icons/another_phone.png" alt="" /></div>
+                  <div class="header__burger">
+                    <img src="img/burger.png" alt="" />
+                  </div>
+                  <div class="header__phone">
+                    <img src="img/icons/another_phone.png" alt="" />
+                  </div>
                   <a class="contacts__number" href="#">+375 (29) 113-69-69</a>
+                  <div class="contacts__title">
+                    <h4>lover</h4>
+                    <h4>flower</h4>
+                  </div>
                   <a href="#"
                     ><div class="header__handbag">
                       <img src="img/icons/handbag-thin.png" alt="" /></div
@@ -91,6 +100,234 @@
               <p class="catalog__text">
                 В нашем магазине самый большой выбор букетов для любых событий:
               </p>
+              <div class="filters-mobile">
+                <div class="filter-goods">
+                  <div class="filter-goods__title">
+                    <div class="filt__text">фильтр товаров</div>
+                    <div class="pink__arrow">
+                      <img src="img/catalog/pink_arrow.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="filter-goods__content">
+                    <form class="catalog-select-mobil" action="#">
+                      <div class="select__block">
+                        <div class="select__title">По свету</div>
+                        <input
+                          class="custom__checkbox"
+                          type="checkbox"
+                          id="l_1"
+                        /><label for="l_1" class="select__input">нежные</label>
+                        <input
+                          class="custom__checkbox"
+                          type="checkbox"
+                          id="l_2"
+                        /><label for="l_2" class="select__input">яркие</label>
+                      </div>
+                      <div class="select__block">
+                        <div class="select__title">По цвету</div>
+                        <input
+                          class="custom__checkbox"
+                          type="checkbox"
+                          id="c_1"
+                        /><label for="c_1" class="select__input">белый</label>
+                        <input
+                          class="custom__checkbox"
+                          type="checkbox"
+                          id="c_2"
+                        /><label for="c_2" class="select__input">желтый</label>
+
+                        <input
+                          class="custom__checkbox"
+                          type="checkbox"
+                          id="c_3"
+                        /><label for="c_3" class="select__input">зеленый</label>
+                        <input
+                          class="custom__checkbox"
+                          type="checkbox"
+                          id="c_4"
+                        /><label for="c_4" class="select__input">красный</label>
+                        <input
+                          class="custom__checkbox"
+                          type="checkbox"
+                          id="c_5"
+                        /><label for="c_5" class="select__input"
+                          >оранжевый</label
+                        >
+                        <input
+                          class="custom__checkbox"
+                          type="checkbox"
+                          id="c_6"
+                        /><label for="c_6" class="select__input">розовый</label>
+                        <input
+                          class="custom__checkbox"
+                          type="checkbox"
+                          id="c_7"
+                        />
+                        <label for="c_7" class="select__input">синий</label>
+                      </div>
+                      <div class="select__block">
+                        <div class="select__title">по формату</div>
+                        <input
+                          class="custom__checkbox"
+                          type="checkbox"
+                          id="f_1"
+                        />
+                        <label for="f_1" class="select__input">букет</label>
+                        <input
+                          class="custom__checkbox"
+                          type="checkbox"
+                          id="f_2"
+                        />
+                        <label for="f_2" class="select__input">в вазе</label>
+                        <input
+                          class="custom__checkbox"
+                          type="checkbox"
+                          id="f_3"
+                        />
+                        <label for="f_3" class="select__input"
+                          >в конверте</label
+                        >
+                        <input
+                          class="custom__checkbox"
+                          type="checkbox"
+                          id="f_4"
+                        /><label for="f_4" class="select__input"
+                          >в корзине</label
+                        >
+                        <input
+                          class="custom__checkbox"
+                          type="checkbox"
+                          id="f_5"
+                        />
+                        <label for="f_5" class="select__input"
+                          >в шляпной коробке</label
+                        >
+                        <input
+                          class="custom__checkbox"
+                          type="checkbox"
+                          id="f_6"
+                        />
+                        <label for="f_6" class="select__input">в ящике</label>
+                      </div>
+                      <div class="select__block">
+                        <div class="select__title">стоимость</div>
+
+                        <input
+                          class="styled-slider slider-progress"
+                          type="range"
+                          min="40"
+                          max="400"
+                          step="5"
+                          value="100"
+                        />
+                      </div>
+                      <div class="select__block">
+                        <div class="select__title">по цветку</div>
+                        <input
+                          class="custom__checkbox"
+                          type="checkbox"
+                          id="fl_1"
+                        />
+                        <label for="fl_1" class="select__input"
+                          >Альстромерия (2)</label
+                        >
+                        <input
+                          class="custom__checkbox"
+                          type="checkbox"
+                          id="fl_2"
+                        /><label for="fl_2" class="select__input"
+                          >Антуриум (1)</label
+                        >
+                        <input
+                          class="custom__checkbox"
+                          type="checkbox"
+                          id="fl_3"
+                        />
+                        <label for="fl_3" class="select__input"
+                          >Аспарагус (1)</label
+                        >
+                        <input
+                          class="custom__checkbox"
+                          type="checkbox"
+                          id="fl_4"
+                        />
+                        <label for="fl_4" class="select__input"
+                          >Астильба (7)</label
+                        >
+                        <input
+                          class="custom__checkbox"
+                          type="checkbox"
+                          id="fl_5"
+                        />
+                        <label for="fl_5" class="select__input"
+                          >Астранция (1)</label
+                        >
+                      </div>
+                      <button class="select__button" type="reset">
+                        Сбросить фильтр
+                      </button>
+                    </form>
+                  </div>
+                </div>
+                <div class="sort-goods">
+                  <div class="sort-goods__title">
+                    <div class="filt__text">сортировка товаров</div>
+                    <div class="pink__arrow">
+                      <img src="img/catalog/pink_arrow.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="sort-goods__content">
+                    <input
+                      class="custom__checkbox"
+                      type="checkbox"
+                      id="con_1"
+                    /><label for="con_1" class="select__input"
+                      >по популярности</label
+                    >
+                    <input
+                      class="custom__checkbox"
+                      type="checkbox"
+                      id="con_2"
+                    /><label for="con_2" class="select__input"
+                      >сначала дорогие</label
+                    >
+                    <input
+                      class="custom__checkbox"
+                      type="checkbox"
+                      id="con_3"
+                    /><label for="con_3" class="select__input"
+                      >сначала дешевые</label
+                    >
+                  </div>
+                </div>
+                <div class="categories-goods">
+                  <div class="categories-goods__title">
+                    <div class="filt__text">Категории</div>
+                    <div class="pink__arrow">
+                      <img src="img/catalog/pink_arrow.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="categories-goods__content">
+                    <div class="filters__item">Букеты из гипсофил</div>
+                    <div class="filters__item">Букеты из ромашек</div>
+                    <div class="filters__item">Букеты из хризантем</div>
+                    <div class="filters__item">Комнатные цветы в горшках</div>
+                    <div class="filters__item">Монобукеты</div>
+                    <div class="filters__item">Сборные букеты</div>
+                    <div class="filters__item">Букет на праздник</div>
+                    <div class="filters__item">Композиции из цветов</div>
+                    <div class="filters__item">Конверты</div>
+                    <div class="filters__item">Открытки</div>
+                    <div class="filters__item">Подарки</div>
+                    <div class="filters__item">Букеты из сухоцветов</div>
+                    <div class="filters__item">Шары</div>
+                    <div class="filters__item">Популярное</div>
+                    <div class="filters__item">Букеты роз</div>
+                    <div class="filters__item">Цветы на похороны</div>
+                    <div class="filters__item">Упаковка подарков</div>
+                  </div>
+                </div>
+              </div>
               <div class="filters">
                 <div class="filters__item">Букеты из гипсофил</div>
                 <div class="filters__item">Букеты из ромашек</div>
@@ -200,11 +437,12 @@
                 <div class="select__block">
                   <div class="select__title">стоимость</div>
                   <input
-                    class="range"
-                    min="50"
+                    class="styled-slider slider-progress"
+                    type="range"
+                    min="40"
                     max="400"
                     step="5"
-                    type="range"
+                    value="100"
                   />
                 </div>
                 <div class="select__block">
@@ -230,6 +468,7 @@
                 </button>
               </form>
               <div class="catalog-images">
+                <a href="#" id="up"></a>
                 <div class="popular-card">
                   <div class="card__image">
                     <img src="img/catalog/flowers/image 114.png" alt="" />
@@ -376,11 +615,11 @@
                 </div>
               </div>
             </div>
-            <div class="catalog__button-up">
+            <a class="catalog__button-up" href="#up">
               <div class="button__button-up">
                 <img src="img/catalog/button_up.png" alt="" />
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -563,6 +802,59 @@
             ><div class="cart__button">Оформить заказ</div></a
           >
         </form>
+      </div>
+    </section>
+    <section class="menu-burger">
+      <div class="burger-wrapper">
+        <div class="burger-content">
+          <div class="menu__close">
+            <img src="img/cart/close_cart.png" alt="" />
+          </div>
+          <a class="burger__logo" href="index.html">
+            <img class="header__img" src="img/icons/logo.png" alt="" />
+          </a>
+          <div class="search-block">
+            <div class="search-block__img">
+              <img src="img/icons/search-icon.png" alt="" />
+            </div>
+            <p class="burger__text">поиск</p>
+          </div>
+          <a href="index.html" class="burger__text">Главная</a>
+          <a href="catalog.html" class="burger__text">Каталог</a>
+          <a href="shipment.html" class="burger__text">Доставка и оплата</a>
+          <a href="about.html" class="burger__text">О нас</a>
+          <a href="contacts.html" class="burger__text">Контакты</a>
+          <a href="faq.html" class="burger__text">FAQ</a>
+          <a href="corporate.html" class="burger__text"
+            >для корпоративных клиентов</a
+          >
+          <div class="white__line">
+            <img src="img/icons/white_line.png" alt="" />
+          </div>
+          <a class="footer-mobile__title" href="#">zakaz@loverflower.by</a>
+          <p class="footer-mobile__text menu">
+            Доставка 24/7 по договоренности с оператором
+          </p>
+          <a class="footer-mobile__title" href="#">ул. Тимирязева 67</a>
+          <p class="footer-mobile__text menu">
+            10:00 до 21:00 <br />
+            без выходных
+          </p>
+          <p class="policy">Политика конфиденциальности</p>
+          <p class="policy">Обработка персональных данных</p>
+          <a href="#" class="tel__number">+375 (29) 113-69-69</a>
+          <div class="footer-mobile-icons burg">
+            <a class="footer__icon" href="#">
+              <img src="img/icons/insta_icon.png" alt="" />
+            </a>
+            <a class="footer__icon" href="#">
+              <img src="img/icons/whatsapp_icon.png" alt="" />
+            </a>
+            <a class="footer__icon" href="#">
+              <img src="img/icons/phone_icon.png" alt="" />
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   </body>
