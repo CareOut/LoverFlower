@@ -105,6 +105,10 @@ a {
   margin-left: 10px;
 }
 
+.header__burger {
+  display: none;
+}
+
 /*...............................................ORDER...........................................................*/
 .order {
   background: #282828;
@@ -346,6 +350,8 @@ label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .adress__input {
@@ -1047,5 +1053,337 @@ select {
 .cart__button:hover {
   background: #43ffd2;
   color: #000000;
+}
+
+/*......................................................BURGER...................................................*/
+.menu-burger {
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 2;
+  margin: auto;
+  overflow: scroll;
+  display: none;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.burger-wrapper {
+  width: 260px;
+  background: #000000;
+  height: 100%;
+}
+
+.burger-content {
+  height: 100%;
+  padding: 0px 10px;
+  position: relative;
+}
+
+.menu__close {
+  position: absolute;
+  top: 4%;
+  right: 5%;
+}
+
+.burger__text {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.search-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search-block__img {
+  margin-bottom: 10px;
+  padding-top: 5px;
+}
+
+.policy {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.04em;
+  -webkit-font-feature-settings: "liga" off;
+          font-feature-settings: "liga" off;
+  color: #555555;
+}
+
+.tel__number {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.burg {
+  margin-top: 10px;
+}
+
+.white__line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.menu {
+  margin-bottom: 10px;
+}
+
+/*............................................ADAPTIVE.........................................................*/
+@media only screen and (max-width: 430px) {
+  .container {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  /*.....................................HEADER.....................................................*/
+  .header__logo,
+  .header__navbar,
+  .header__phone,
+  .contacts__number {
+    display: none;
+  }
+  .header-wrapper {
+    padding: 20px 10px;
+  }
+  .header__contacts {
+    opacity: 1;
+  }
+  .header__contacts {
+    width: 100%;
+    margin: 0;
+    opacity: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header__burger {
+    display: block;
+  }
+  .contacts__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contacts__title h4 {
+    font-family: "Cormorant";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .welcome-bread {
+    margin-bottom: 20px;
+  }
+  /*...........................................ORDER............................................................*/
+  .order-wrapper {
+    padding-top: 35px;
+    padding-bottom: 190px;
+    background: url(../img/order/flower_up_left.png) top 0 left 0/40% no-repeat, url(../img/order/flower_up_right.png) top 0% left 100%/40% no-repeat, url(../img/order/flower_up_right_right.png) top -10% left 100% no-repeat, url(../img/order/lover_flower.png) top 6% left 60%/30% no-repeat, url(../img/order/payment.png) top 96% left 100%/50% no-repeat, url(../img/order/blue_ellipse_up_left.png) top 0 left 0 no-repeat, url(../img/order/blue_ellipse_mid_right.png) top 35% left 100%/90% no-repeat, url(../img/order/purple_ellipse_mid_right.png) top 45% left 100%/90% no-repeat, url(../img/order/blue_ellipse_foot_left.png) top 110% left 0/70% no-repeat, url(../img/order/purple_ellipse_foot_right.png) top 110% left 100%/70% no-repeat;
+  }
+  .welcome__title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+  }
+  .down {
+    margin-left: 0;
+  }
+  .making-order {
+    padding-top: 60px;
+  }
+  .making__title {
+    display: none;
+  }
+  .making__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.06em;
+  }
+  .form-form {
+    width: 100%;
+  }
+  .form__input {
+    width: 100%;
+  }
+  .adress {
+    width: 100%;
+  }
+  .adress__input {
+    width: 140px;
+  }
+  /*............................................CART...........................................................*/
+  .cart-wrapper {
+    width: 300px;
+    background: #000000;
+    min-height: 100vh;
+    padding: 10px;
+    overflow: scroll;
+  }
+  .cart-items {
+    min-height: 50vh;
+  }
+  .baloons-items {
+    gap: 15px;
+  }
+  .cart__button {
+    width: 100%;
+  }
+  .baloons {
+    padding-bottom: 15px;
+  }
+  .baloon__name {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 12px;
+    letter-spacing: 0.02em;
+  }
+  .baloon__price {
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 12px;
+    letter-spacing: 0.04em;
+  }
+  .baloon__add {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 12px;
+    letter-spacing: 0.04em;
+  }
+  .total__text {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+  }
+  .order {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+  }
+  .item__title {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+  }
+  /*.........................................adaptive footer..................................................*/
+  .footer-column-2,
+  .footer-column-3 {
+    display: none;
+  }
+  .footer-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 0px;
+  }
+  .footer-column-4 {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-mobile {
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-column-1 {
+    width: 100%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .order-order {
+    display: none;
+  }
 }
 /*# sourceMappingURL=order.css.map */
