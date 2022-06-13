@@ -343,9 +343,15 @@ a {
 }
 
 .catalog-images {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-img {
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -417,6 +423,7 @@ a {
   text-transform: uppercase;
   color: #ffffff;
   transition: all 0.4s;
+  cursor: pointer;
 }
 
 .card__button:hover {
@@ -532,7 +539,6 @@ a {
 .catalog__button-up {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 75px;
 }
 
 .select__button {
@@ -919,6 +925,11 @@ input[type="range"].styled-slider.slider-progress:hover::-ms-fill-lower {
   width: 60%;
   display: flex;
   gap: 20px;
+}
+
+.cart__img {
+  width: 70%;
+  height: auto;
 }
 
 .item-description {
