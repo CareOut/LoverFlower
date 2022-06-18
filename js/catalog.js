@@ -1,17 +1,14 @@
-//............cart..............
+//..........burger....................
 
-const handBag = document.querySelectorAll(".header__handbag");
-const cart = document.querySelector(".cart");
-const close = document.querySelector(".cart__close");
+const burger = document.querySelector(".header__burger");
+const closeBurger = document.querySelector(".menu__close");
+const menu = document.querySelector(".menu-burger");
 
-handBag.forEach((el) => {
-  el.addEventListener("click", () => {
-    cart.style.display = "flex";
-  });
+burger.addEventListener("click", () => {
+  menu.style.display = "flex";
 });
-
-close.addEventListener("click", () => {
-  cart.style.display = "none";
+closeBurger.addEventListener("click", () => {
+  menu.style.display = "none";
 });
 
 //...................................фильтры..........................................
@@ -65,97 +62,96 @@ for (let e of document.querySelectorAll(
   e.addEventListener("input", () => e.style.setProperty("--value", e.value));
 }
 
-//..........burger....................
-
-const burger = document.querySelector(".header__burger");
-const closeBurger = document.querySelector(".menu__close");
-const menu = document.querySelector(".menu-burger");
-
-burger.addEventListener("click", () => {
-  menu.style.display = "flex";
-});
-closeBurger.addEventListener("click", () => {
-  menu.style.display = "none";
-});
-
 // .....................Catalog...........
 
-function showCatalog() {
-  const buketList = [
-    {
-      id: 1,
-      image: "img/catalog/flowers/image114.png",
-      name: "Лучший день",
-      price: 167.0,
-    },
-    {
-      id: 2,
-      image: "img/catalog/flowers/image130.png",
-      name: "Лучший день",
-      price: 166.0,
-    },
-    {
-      id: 3,
-      image: "img/catalog/flowers/image131.png",
-      name: "Лучший день",
-      price: 144.0,
-    },
-    {
-      id: 4,
-      image: "img/catalog/flowers/image132.png",
-      name: "Лучший день",
-      price: 150.0,
-    },
-    {
-      id: 5,
-      image: "img/catalog/flowers/image133.png",
-      name: "Лучший день",
-      price: 170.0,
-    },
-    {
-      id: 6,
-      image: "img/catalog/flowers/image134.png",
-      name: "Лучший день",
-      price: 117.0,
-    },
-    {
-      id: 7,
-      image: "img/catalog/flowers/image135.png",
-      name: "Лучший день",
-      price: 127.0,
-    },
-    {
-      id: 8,
-      image: "img/catalog/flowers/image136.png",
-      name: "Лучший день",
-      price: 153.0,
-    },
-    {
-      id: 9,
-      image: "img/catalog/flowers/image137.png",
-      name: "Лучший день",
-      price: 176.0,
-    },
-    {
-      id: 10,
-      image: "img/catalog/flowers/image138.png",
-      name: "Лучший день",
-      price: 147.0,
-    },
-    {
-      id: 11,
-      image: "img/catalog/flowers/image139.png",
-      name: "Лучший день",
-      price: 161.0,
-    },
-    {
-      id: 12,
-      image: "img/catalog/flowers/image140.png",
-      name: "Лучший день",
-      price: 157.0,
-    },
-  ];
+const buketList = [
+  {
+    id: 1,
+    image: "img/catalog/flowers/image114.png",
+    name: "Лучший день",
+    price: 167.0,
+    quantity: 1,
+  },
+  {
+    id: 2,
+    image: "img/catalog/flowers/image130.png",
+    name: "Лучший день",
+    price: 166.0,
+    quantity: 1,
+  },
+  {
+    id: 3,
+    image: "img/catalog/flowers/image131.png",
+    name: "Лучший день",
+    price: 144.0,
+    quantity: 1,
+  },
+  {
+    id: 4,
+    image: "img/catalog/flowers/image132.png",
+    name: "Лучший день",
+    price: 150.0,
+    quantity: 1,
+  },
+  {
+    id: 5,
+    image: "img/catalog/flowers/image133.png",
+    name: "Лучший день",
+    price: 170.0,
+    quantity: 1,
+  },
+  {
+    id: 6,
+    image: "img/catalog/flowers/image134.png",
+    name: "Лучший день",
+    price: 117.0,
+    quantity: 1,
+  },
+  {
+    id: 7,
+    image: "img/catalog/flowers/image135.png",
+    name: "Лучший день",
+    price: 127.0,
+    quantity: 1,
+  },
+  {
+    id: 8,
+    image: "img/catalog/flowers/image136.png",
+    name: "Лучший день",
+    price: 153.0,
+    quantity: 1,
+  },
+  {
+    id: 9,
+    image: "img/catalog/flowers/image137.png",
+    name: "Лучший день",
+    price: 176.0,
+    quantity: 1,
+  },
+  {
+    id: 10,
+    image: "img/catalog/flowers/image138.png",
+    name: "Лучший день",
+    price: 147.0,
+    quantity: 1,
+  },
+  {
+    id: 11,
+    image: "img/catalog/flowers/image139.png",
+    name: "Лучший день",
+    price: 161.0,
+    quantity: 1,
+  },
+  {
+    id: 12,
+    image: "img/catalog/flowers/image140.png",
+    name: "Лучший день",
+    price: 157.0,
+    quantity: 1,
+  },
+];
 
+function showCatalog() {
   const catalogEnd = document.querySelector(".catalog-images");
   const catalog = document.querySelector(".catalog-img");
   let buket = "";
@@ -184,16 +180,25 @@ function showCatalog() {
             </a>`;
   catalogEnd.insertAdjacentHTML("beforeEnd", buttonUp);
 }
-const cartList = [];
+
+window.onload = showCatalog();
+
+//............cart..............
+
+export const cartList = [];
 const button = document.querySelectorAll(".card__button");
 button.forEach((item) => {
-  item.addEventListener("click", () => {
+  item.addEventListener("click", (e) => {
     buketList.forEach((item) => {
-      if (item.id === e.target.id) {
-        cartList.push(item);
+      if (item.id == e.target.id) {
+        if (cartList.includes(item)) {
+          item.quantity += 1;
+          renderCart(cartList);
+        } else {
+          cartList.push(item);
+          renderCart(cartList);
+        }
       }
     });
   });
 });
-
-window.onload = showCatalog();
