@@ -204,7 +204,7 @@ a {
   color: #43ffd2;
 }
 
-.item__img {
+.item__image {
   position: absolute;
   right: 0;
 }
@@ -407,6 +407,11 @@ a {
   gap: 20px;
 }
 
+.cart__img {
+  width: 70%;
+  height: auto;
+}
+
 .item-description {
   height: 100%;
   display: flex;
@@ -598,7 +603,6 @@ a {
   background: #43ffd2;
   color: #000000;
 }
-
 /*......................................................BURGER...................................................*/
 
 .menu-burger {

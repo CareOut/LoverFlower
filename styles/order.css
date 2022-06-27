@@ -902,6 +902,11 @@ select {
           align-items: flex-end;
 }
 
+.cart__img {
+  width: 70%;
+  height: auto;
+}
+
 .item__price {
   font-family: "Oswald";
   font-style: normal;

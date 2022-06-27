@@ -185,7 +185,7 @@ window.onload = showCatalog();
 
 //............cart..............
 
-export const cartList = [];
+const cartList = [];
 const button = document.querySelectorAll(".card__button");
 button.forEach((item) => {
   item.addEventListener("click", (e) => {
@@ -193,10 +193,10 @@ button.forEach((item) => {
       if (item.id == e.target.id) {
         if (cartList.includes(item)) {
           item.quantity += 1;
-          renderCart(cartList);
+          localStorage.setItem("data", JSON.stringify(cartList));
         } else {
           cartList.push(item);
-          renderCart(cartList);
+          localStorage.setItem("data", JSON.stringify(cartList));
         }
       }
     });

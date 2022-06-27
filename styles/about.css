@@ -555,6 +555,11 @@ a {
       justify-content: space-around;
 }
 
+.cart__img {
+  width: 70%;
+  height: auto;
+}
+
 .item__title {
   font-family: "Oswald";
   font-style: normal;

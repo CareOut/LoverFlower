@@ -230,7 +230,7 @@ a {
   color: #43ffd2;
 }
 
-.item__img {
+.item__image {
   position: absolute;
   right: 0;
 }
@@ -449,6 +449,11 @@ a {
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
+}
+
+.cart__img {
+  width: 70%;
+  height: auto;
 }
 
 .item-description {
