@@ -233,6 +233,7 @@ a {
 .item__image {
   position: absolute;
   right: 0;
+  cursor: pointer;
 }
 
 .item__text {

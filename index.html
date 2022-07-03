@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles/main.css" />
-    <script type="module" src="js/main.js" defer></script>
-    <script type="module" src="js/cart.js" defer></script>
+    <script src="js/script.js" defer></script>
   </head>
   <body>
     <section class="intro">
@@ -44,7 +43,7 @@
                   </div>
                   <div class="header__contacts">
                     <div class="header__burger">
-                      <img src="img/burger.png" alt="" />
+                      <img class="burger__item" src="img/burger.png" alt="" />
                     </div>
 
                     <div class="header__phone">
@@ -53,7 +52,11 @@
                     <a class="contacts__number" href="#">+375 (29) 113-69-69</a>
                     <a href="#"
                       ><div class="header__handbag">
-                        <img src="img/icons/handbag-thin.png" alt="" /></div
+                        <img
+                          class="head__handbag"
+                          src="img/icons/handbag-thin.png"
+                          alt=""
+                        /></div
                     ></a>
                   </div>
                 </div>
@@ -498,7 +501,7 @@
           <div class="content-title">
             <h6 class="content__title">Ваша корзина</h6>
             <div class="cart__close">
-              <img src="img/cart/close_cart.png" alt="" />
+              <img class="cart__cross" src="img/cart/close_cart.png" alt="" />
             </div>
           </div>
           <div class="cart-items"></div>
@@ -544,7 +547,7 @@
       <div class="burger-wrapper">
         <div class="burger-content">
           <div class="menu__close">
-            <img src="img/cart/close_cart.png" alt="" />
+            <img class="burger__cross" src="img/cart/close_cart.png" alt="" />
           </div>
           <a class="burger__logo" href="index.html">
             <img class="header__img" src="img/icons/logo.png" alt="" />
